@@ -1,0 +1,107 @@
+version: 2
+
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+
+layout:
+  /top/:
+    - [logo 30, menu 50, social 20]
+
+  /slider/:
+    - position-slider
+
+  /service/:
+    - position-service
+
+  /web-project/:
+    - position-webproject
+
+  /portfolio/:
+    - position-portfolio
+
+  /team/:
+    - position-team
+
+  /wrapper-bottom/:
+
+    /number/:
+      - position-number
+    /contact/:
+      - [position-info 50, position-form 50]
+
+  /footer/:
+    -
+      - branding 33.3
+      - totop 33.3
+      - copyright 33.3
+
+  offcanvas:
+    - mobile-menu
+
+structure:
+  top:
+    title: Topo
+    subtype: header
+  slider:
+    title: SlideShow
+  service:
+    title: Serviços
+  web-project:
+    title: Projetos Web
+  team:
+    title: Equipe
+  number:
+    title: Números
+  contact:
+    title: Contato
+  footer:
+    title: Rodapé
+
+content:
+  logo:
+    block:
+      class: wa-logo
+  menu:
+    block:
+      class: wa-menu
+  social:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-twitter'
+          text: Twitter
+          link: 'http://twitter.com/leowg'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'http://facebook.com/leowgweb'
+          name: Facebook
+        -
+          icon: 'fa fa-google'
+          text: Google
+          link: 'http://plus.google.com/+leowgweb'
+          name: Google
+        -
+          icon: 'fa fa-youtube'
+          text: Youtube
+          link: 'http://www.youtube.com/leowgweb'
+          name: Youtube
+    block:
+      class: wg-social
+  branding:
+    block:
+      class: wa-branding
+  totop:
+    block:
+      class: wa-totop
+      variations: center
+  copyright:
+    block:
+      class: wa-copy
+      variations: align-right
+  mobile-menu:
+    title: 'Mobile Menu'
+    block:
+      class: wa-mobile-menu

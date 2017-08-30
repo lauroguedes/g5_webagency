@@ -1,0 +1,161 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1501715651
+layout:
+  /top/:
+    -
+      - 'logo-1982 30'
+      - 'menu-7131 50'
+      - 'social-7880 20'
+  /slider/:
+    -
+      - position-slider
+  /service/:
+    -
+      - position-service
+  /web-project/:
+    -
+      - position-webproject
+  /portfolio/:
+    -
+      - position-portfolio
+  /team/:
+    -
+      - position-team
+  /wrapper-bottom/:
+    /number/:
+      -
+        - position-number
+    /contact/:
+      -
+        - 'position-info 50'
+        - 'position-form 50'
+  /footer/:
+    -
+      - 'branding-5351 33.3'
+      - 'totop-1814 33.3'
+      - 'copyright-5421 33.3'
+  offcanvas:
+    -
+      - mobile-menu-1101
+structure:
+  top:
+    title: Topo
+    subtype: header
+    type: section
+    attributes:
+      boxed: ''
+  slider:
+    title: SlideShow
+    type: section
+    attributes:
+      boxed: ''
+  service:
+    title: Serviços
+    type: section
+    attributes:
+      boxed: ''
+  web-project:
+    title: 'Projetos Web'
+    type: section
+    attributes:
+      boxed: ''
+  portfolio:
+    type: section
+    attributes:
+      boxed: ''
+  team:
+    title: Equipe
+    type: section
+    attributes:
+      boxed: ''
+  number:
+    title: Números
+    type: section
+    attributes:
+      boxed: ''
+  contact:
+    title: Contato
+    type: section
+    attributes:
+      boxed: ''
+  wrapper-bottom:
+    attributes:
+      boxed: ''
+  footer:
+    title: Rodapé
+    attributes:
+      boxed: ''
+content:
+  logo-1982:
+    block:
+      class: wa-logo
+  menu-7131:
+    block:
+      class: wa-menu
+  social-7880:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-twitter'
+          text: Twitter
+          link: 'http://twitter.com/leowg'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook'
+          text: Facebook
+          link: 'http://facebook.com/leowgweb'
+          name: Facebook
+        -
+          icon: 'fa fa-google'
+          text: Google
+          link: 'http://plus.google.com/+leowgweb'
+          name: Google
+        -
+          icon: 'fa fa-youtube'
+          text: Youtube
+          link: 'http://www.youtube.com/leowgweb'
+          name: Youtube
+    block:
+      class: wg-social
+  position-slider:
+    attributes:
+      key: slider
+  position-service:
+    attributes:
+      key: service
+  position-webproject:
+    attributes:
+      key: webproject
+  position-portfolio:
+    attributes:
+      key: portfolio
+  position-team:
+    attributes:
+      key: team
+  position-number:
+    attributes:
+      key: number
+  position-info:
+    attributes:
+      key: info
+  position-form:
+    attributes:
+      key: form
+  branding-5351:
+    block:
+      class: wa-branding
+  totop-1814:
+    block:
+      class: wa-totop
+      variations: center
+  copyright-5421:
+    block:
+      class: wa-copy
+      variations: align-right
+  mobile-menu-1101:
+    title: 'Mobile Menu'
+    block:
+      class: wa-mobile-menu

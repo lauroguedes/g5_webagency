@@ -1,0 +1,14 @@
+#g-service {
+	padding: $section-padding 0;
+	background: $service-background;
+	color: $service-text-color;
+	border-top: 1px solid rgba(0,0,0,0.05);
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+@media print {
+	#g-service {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

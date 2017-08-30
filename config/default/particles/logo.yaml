@@ -1,0 +1,5 @@
+enabled: '1'
+url: ''
+image: 'gantry-assets://images/logo1.png'
+text: 'WebAgency'
+class: web-agency-logo

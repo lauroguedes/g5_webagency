@@ -1,0 +1,16 @@
+name: Team
+description: Displays Tems with photo, name and informations
+type: particle
+icon: fa-users
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true

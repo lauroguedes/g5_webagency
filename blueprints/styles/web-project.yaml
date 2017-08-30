@@ -1,0 +1,19 @@
+name: Web Project Colors
+description: Header colors for the WebAgency theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#666666"
+    image:
+      type: input.imagepicker
+      label: Image
+      default: "gantry-assets://images/background-web-project.png"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#ffffff"

@@ -1,0 +1,16 @@
+name: Slider
+description: Displays Slideshow of videos and images
+type: particle
+icon: fa-images
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true

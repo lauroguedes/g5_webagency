@@ -1,0 +1,24 @@
+hydrogen-theme:
+  title: 'WebAgency Theme'
+  description: 'Sample menu for WebAgency theme.'
+
+  items:
+    pagina-inicial:
+      title: 'Início'
+      outline: home
+      home: 1
+    agencia:
+      title: 'Agência'
+      outline: home
+    servicos:
+      title: 'Serviços'
+      outline: home
+    portfolio:
+      title: 'Portfólio'
+      outline: home
+    equipe:
+      title: 'Equipe'
+      outline: home
+    contato:
+      title: 'Contato'
+      outline: home

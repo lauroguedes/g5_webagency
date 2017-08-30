@@ -1,0 +1,16 @@
+name: Count Number
+description: Displays Numbers of projects
+type: particle
+icon: fa-sort-numeric-asc
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true

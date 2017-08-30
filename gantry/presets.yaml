@@ -1,0 +1,104 @@
+preset1:
+  image: 'gantry-admin://images/preset1.png'
+  description: GANTRY5_PLATFORM_PRESET1
+  colors:
+    - '#ff7f00'
+    - '#354d59'
+    - '#04abd2'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#666666'
+      body-font: 'fanwood_text, serif'
+      heading-font: 'oswald, sans-serif'
+    accent:
+      color-1: '#ff7f00'
+      color-2: '#04abd2'
+    top:
+      background: '#666666'
+      text-color: '#ffffff'
+      overlay: "rgba(0, 0, 0, 0.8)"
+    slider:
+      background: '#ffffff'
+      text-color: '#666666'
+    service:
+      background: '#ffffff'
+      text-color: '#666666'
+    web-project:
+      background: '#666666'
+      image: "gantry-assets://images/background-web-project.png"
+      text-color: '#ffffff'
+    portfolio:
+      background: '#ffffff'
+      text-color: '#666666'
+    main:
+      background: '#ffffff'
+      text-color: '#666666'
+    team:
+      background: '#ffffff'
+      text-color: '#666666'
+    number:
+      background: ''
+      text-color: '#ffffff'
+    contact:
+      background: ''
+      image: "gantry-assets://images/background-contact.jpg"
+      text-color: '#ffffff'
+    footer:
+      background: '#ffffff'
+      text-color: '#666666'
+    offcanvas:
+      background: '#666666'
+      text-color: '#ffffff'
+
+preset2:
+  image: 'gantry-admin://images/preset2.png'
+  description: GANTRY5_PLATFORM_PRESET2
+  colors:
+    - '#eb9486'
+    - '#cae7b9'
+    - '#616b72'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#616b72'
+    accent:
+      color-1: '#eb9486'
+      color-2: '#cae7b9'
+    top:
+      background: '#616b72'
+      text-color: '#ffffff'
+    slider:
+      background: '#ffffff'
+      text-color: '#616b72'
+    service:
+      background: '#ffffff'
+      text-color: '#616b72'
+    web-project:
+      background: '#616b72'
+      image: "gantry-assets://images/background-web-project.png"
+      text-color: '#ffffff'
+    portfolio:
+      background: '#ffffff'
+      text-color: '#616b72'
+    main:
+      background: '#ffffff'
+      text-color: '#616b72'
+    team:
+      background: '#ffffff'
+      text-color: '#616b72'
+    number:
+      background: ''
+      text-color: '#ffffff'
+    contact:
+      background: ''
+      image: "gantry-assets://images/background-contact.jpg"
+      text-color: '#ffffff'
+    footer:
+      background: '#ffffff'
+      text-color: '#616b72'
+    offcanvas:
+      background: '#616b72'
+      text-color: '#ffffff'

@@ -1,0 +1,57 @@
+preset: preset1
+base:
+  background: '#ffffff'
+  text-color: '#666666'
+  body-font: 'fanwood_text, serif'
+  heading-font: 'oswald, sans-serif'
+accent:
+  color-1: '#ff7f00'
+  color-2: '#04abd2'
+top:
+  background: '#666666'
+  text-color: '#ffffff'
+  overlay: 'rgba(0, 0, 0, 0.8)'
+slider:
+  background: '#ffffff'
+  text-color: '#666666'
+service:
+  background: '#ffffff'
+  text-color: '#666666'
+web-project:
+  background: '#666666'
+  image: 'gantry-assets://images/background-web-project.png'
+  text-color: '#ffffff'
+portfolio:
+  background: '#ffffff'
+  text-color: '#666666'
+main:
+  background: '#ffffff'
+  text-color: '#666666'
+team:
+  background: '#ffffff'
+  text-color: '#666666'
+number:
+  background: ''
+  text-color: '#ffffff'
+contact:
+  background: ''
+  image: 'gantry-assets://images/background-contact.jpg'
+  text-color: '#ffffff'
+footer:
+  background: '#ffffff'
+  text-color: '#666666'
+offcanvas:
+  background: '#666666'
+  text-color: '#ffffff'
+  width: 17rem
+  toggle-color: '#ffffff'
+  toggle-visibility: '1'
+breakpoints:
+  large-desktop-container: 75rem
+  desktop-container: 60rem
+  tablet-container: 48rem
+  large-mobile-container: 30rem
+  mobile-menu-breakpoint: 48rem
+menu:
+  col-width: 180px
+  animation: g-fade

@@ -1,0 +1,19 @@
+name: Contact Colors
+description: Feature colors for the WebAgency theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: ""
+    image:
+      type: input.imagepicker
+      label: Image
+      default: "gantry-assets://images/background-contact.jpg"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#ffffff"

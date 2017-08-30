@@ -1,0 +1,16 @@
+name: Web Project
+description: Displays Web Project with your features.
+type: particle
+icon: fa-columns
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true

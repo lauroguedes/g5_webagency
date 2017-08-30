@@ -1,0 +1,15 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/body-only.png'
+  name: _body_only
+  timestamp: 1501715651
+layout:
+  /main/:
+    -
+      - system-messages-6553
+    -
+      - system-content-1250
+structure:
+  main:
+    attributes:
+      boxed: ''

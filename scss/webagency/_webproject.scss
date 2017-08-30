@@ -1,0 +1,12 @@
+#g-webproject {
+	padding: 1.5rem 0;
+	background: $webproject-background;
+	color: $webproject-text-color;
+}
+
+@media print {
+	#g-webproject {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

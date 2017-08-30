@@ -1,0 +1,62 @@
+.flush {
+  .g-container {
+    > .g-grid {
+      > .g-block {
+        > .g-content {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.moduletable, .widget {
+  &[class*="box"], &[class*="shadow"] {
+    padding: $content-padding;
+    margin: $content-margin;
+  }
+}
+
+.title1{
+
+}
+.title2{
+
+}
+.title3{
+
+}
+.title4{
+
+}
+
+.shadow {
+  &.moduletable, &.widget, &.g-outer-box, > .g-content {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  }
+}
+
+.shadow2 {
+  &.moduletable, &.widget, &.g-outer-box, > .g-content {
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+  }
+}
+
+.disabled {
+  &.moduletable, &.widget, &.g-outer-box, > .g-content {
+    opacity: 0.4;
+  }
+}
+
+.square {
+  &.moduletable, &.widget, &.g-outer-box, > .g-content {
+    border-radius: none;
+  }
+}
+
+.rounded {
+  &.moduletable, &.widget, &.g-outer-box, > .g-content {
+    border-radius: $core-border-radius;
+  }
+}
