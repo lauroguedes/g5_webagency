@@ -44,7 +44,12 @@
 		ul {
 			background: $offcanvas-background;
 			> li {
+				border-bottom: 1px solid darken($offcanvas-background, 4%);
 				> .g-menu-item-container {
+					font-family: get-font-family($base-heading-font);
+					font-weight: $font-weight-light;
+					text-transform: uppercase;
+					font-size: rem(20px);
 					color: $offcanvas-text-color;
 				}
 				&:not(.g-menu-item-type-particle):not(.g-menu-item-type-module) {

@@ -1,0 +1,3 @@
+@mixin trans($options: all 0.3s linear){
+  @include transition($options);
+}

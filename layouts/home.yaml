@@ -6,7 +6,10 @@ preset:
 
 layout:
   /top/:
-    - [logo 30, menu 50, social 20]
+    - [logo 30, menu 70]
+
+  /social/:
+      - social
 
   /slider/:
     - position-slider
@@ -43,6 +46,10 @@ structure:
   top:
     title: Topo
     subtype: header
+  social:
+    title: Social
+    attributes:
+      boxed: '3'
   slider:
     title: SlideShow
   service:
@@ -67,6 +74,7 @@ content:
       class: wa-menu
   social:
     attributes:
+      display: icons_only
       items:
         -
           icon: 'fa fa-twitter'
@@ -89,7 +97,8 @@ content:
           link: 'http://www.youtube.com/leowgweb'
           name: Youtube
     block:
-      class: wg-social
+      class: [wa-social hidden-phone]
+      variations: [nopaddingall nomarginall]
   branding:
     block:
       class: wa-branding

@@ -12,25 +12,59 @@
 	.g-toplevel {
 		> li {
 			> .g-menu-item-container {
+				font-family: get-font-family($base-heading-font);
+				font-weight: $font-weight-light;
+				text-transform: uppercase;
+				font-size: rem(20px);
+				padding-bottom: 3px;
 				color: $section-text-color;
 			}
+			@include breakpoint(tablet-range){
+				.g-menu-item-container{
+					font-size: rem(16px);
+				}
+			}
 			&:not(.g-menu-item-type-particle):not(.g-menu-item-type-module) {
+				&:after {
+					content: "\f111";
+					font-family: "FontAwesome";
+					color: $accent-color-1;
+					position: relative;
+					bottom: rem(-10px);
+					opacity: 0;
+					@include trans;
+				}
 				&:hover {
-					background: darken($section-background, 6%);
+					&:after {
+						bottom: 0;
+						opacity: 1;
+						@include trans;
+					}
+					> .g-menu-item-container {
+						color: darken($top-text-color, 8%);
+					}
 				}
 
 				&.active {
-					background: $section-active-background;
+					&:after {
+						bottom: 0;
+						color: $accent-color-2;
+						opacity: 1;
+					}
 
 					> .g-menu-item-container {
-						color: $section-active-text-color;
+						color: darken($top-text-color, 8%);
 					}
 
 					&.g-selected {
-						background: darken($section-background, 6%);
+						&:after {
+							bottom: 0;
+							color: $accent-color-2;
+							opacity: 1;
+						}
 
 						> .g-menu-item-container {
-							color: $section-text-color;
+							color: darken($top-text-color, 8%);
 						}
 					}
 				}

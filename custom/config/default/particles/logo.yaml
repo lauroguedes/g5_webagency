@@ -1,5 +1,7 @@
 enabled: '1'
 url: ''
 image: 'gantry-media://logos/logo1.png'
-text: 'WebAgency'
+link: '1'
+svg: ''
+text: WebAgency
 class: web-agency-logo

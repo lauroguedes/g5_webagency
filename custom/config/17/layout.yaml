@@ -2,13 +2,15 @@ version: 2
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home
-  timestamp: 1501715651
+  timestamp: 1503688640
 layout:
   /top/:
     -
-      - 'logo-1982 30'
-      - 'menu-7131 50'
-      - 'social-7880 20'
+      - 'logo-1341 30'
+      - 'menu-5594 70'
+  /social/:
+    -
+      - social-6649
   /slider/:
     -
       - position-slider
@@ -34,32 +36,36 @@ layout:
         - 'position-form 50'
   /footer/:
     -
-      - 'branding-5351 33.3'
-      - 'totop-1814 33.3'
-      - 'copyright-5421 33.3'
+      - 'branding-7795 33.3'
+      - 'totop-5042 33.3'
+      - 'copyright-4274 33.3'
   offcanvas:
     -
-      - mobile-menu-1101
+      - mobile-menu-9957
 structure:
   top:
-    title: Topo
-    subtype: header
     type: section
+    subtype: header
+    title: Topo
     attributes:
       boxed: ''
-  slider:
-    title: SlideShow
+  social:
     type: section
+    attributes:
+      boxed: '3'
+  slider:
+    type: section
+    title: SlideShow
     attributes:
       boxed: ''
   service:
-    title: Serviços
     type: section
+    title: Serviços
     attributes:
       boxed: ''
   web-project:
-    title: 'Projetos Web'
     type: section
+    title: 'Projetos Web'
     attributes:
       boxed: ''
   portfolio:
@@ -67,36 +73,38 @@ structure:
     attributes:
       boxed: ''
   team:
-    title: Equipe
     type: section
+    title: Equipe
     attributes:
       boxed: ''
   number:
-    title: Números
     type: section
+    title: Números
     attributes:
       boxed: ''
   contact:
-    title: Contato
     type: section
+    title: Contato
     attributes:
       boxed: ''
   wrapper-bottom:
     attributes:
+      name: Wrapper
       boxed: ''
   footer:
     title: Rodapé
     attributes:
       boxed: ''
 content:
-  logo-1982:
+  logo-1341:
     block:
       class: wa-logo
-  menu-7131:
+  menu-5594:
     block:
       class: wa-menu
-  social-7880:
+  social-6649:
     attributes:
+      display: icons_only
       items:
         -
           icon: 'fa fa-twitter'
@@ -119,7 +127,8 @@ content:
           link: 'http://www.youtube.com/leowgweb'
           name: Youtube
     block:
-      class: wg-social
+      class: 'wa-social hidden-phone'
+      variations: 'nopaddingall nomarginall'
   position-slider:
     attributes:
       key: slider
@@ -144,18 +153,18 @@ content:
   position-form:
     attributes:
       key: form
-  branding-5351:
+  branding-7795:
     block:
       class: wa-branding
-  totop-1814:
+  totop-5042:
     block:
       class: wa-totop
       variations: center
-  copyright-5421:
+  copyright-4274:
     block:
       class: wa-copy
       variations: align-right
-  mobile-menu-1101:
+  mobile-menu-9957:
     title: 'Mobile Menu'
     block:
       class: wa-mobile-menu

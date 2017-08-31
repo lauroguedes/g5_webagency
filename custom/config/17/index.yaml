@@ -1,10 +1,10 @@
-name: 17
-timestamp: 1501715652
+name: '17'
+timestamp: 1503688699
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home
-  timestamp: 1501715651
+  timestamp: 1503688640
 positions:
   slider: Slider
   service: Service
@@ -16,6 +16,7 @@ positions:
   form: Form
 sections:
   top: Topo
+  social: Social
   slider: SlideShow
   service: Serviços
   web-project: 'Projetos Web'
@@ -27,11 +28,11 @@ sections:
   offcanvas: Offcanvas
 particles:
   logo:
-    logo-1982: Logo
+    logo-1341: Logo
   menu:
-    menu-7131: Menu
+    menu-5594: Menu
   social:
-    social-7880: Social
+    social-6649: Social
   position:
     position-slider: Slider
     position-service: Service
@@ -42,11 +43,11 @@ particles:
     position-info: Info
     position-form: Form
   branding:
-    branding-5351: Branding
+    branding-7795: Branding
   totop:
-    totop-1814: Totop
+    totop-5042: Totop
   copyright:
-    copyright-5421: Copyright
+    copyright-4274: Copyright
   mobile-menu:
-    mobile-menu-1101: 'Mobile Menu'
+    mobile-menu-9957: 'Mobile Menu'
 inherit: {  }

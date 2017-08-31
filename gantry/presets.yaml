@@ -27,7 +27,7 @@ preset1:
       text-color: '#666666'
     web-project:
       background: '#666666'
-      image: "gantry-assets://images/background-web-project.png"
+      image: "gantry-media://backgrounds/background-web-project.png"
       text-color: '#ffffff'
     portfolio:
       background: '#ffffff'
@@ -43,7 +43,7 @@ preset1:
       text-color: '#ffffff'
     contact:
       background: ''
-      image: "gantry-assets://images/background-contact.jpg"
+      image: "gantry-media://backgrounds/background-contact.jpg"
       text-color: '#ffffff'
     footer:
       background: '#ffffff'
@@ -78,7 +78,7 @@ preset2:
       text-color: '#616b72'
     web-project:
       background: '#616b72'
-      image: "gantry-assets://images/background-web-project.png"
+      image: "gantry-media://backgrounds/background-web-project.png"
       text-color: '#ffffff'
     portfolio:
       background: '#ffffff'
@@ -94,7 +94,7 @@ preset2:
       text-color: '#ffffff'
     contact:
       background: ''
-      image: "gantry-assets://images/background-contact.jpg"
+      image: "gantry-media://backgrounds/background-contact.jpg"
       text-color: '#ffffff'
     footer:
       background: '#ffffff'

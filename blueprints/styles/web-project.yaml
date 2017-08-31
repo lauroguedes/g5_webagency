@@ -12,7 +12,7 @@ form:
     image:
       type: input.imagepicker
       label: Image
-      default: "gantry-assets://images/background-web-project.png"
+      default: "gantry-media://backgrounds/background-web-project.png"
     text-color:
       type: input.colorpicker
       label: Text
