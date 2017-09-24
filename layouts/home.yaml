@@ -12,7 +12,7 @@ layout:
       - social
 
   /slider/:
-    - position-slider
+    - slider
 
   /service/:
     - position-service
@@ -99,6 +99,28 @@ content:
     block:
       class: [wa-social hidden-phone]
       variations: [nopaddingall nomarginall]
+  slider:
+    attributes:
+      title1: 'Descubra a Verdadeira Essência do Seu Projeto'
+      title2: 'Criatividade, Simplicidade e Inovação'
+      title3: 'Deixe um brilho nos olhos de seus clientes ao apreciarem seu Projeto'
+      imageOverlay: 'gantry-media://slider-particle/image-overlay.png'
+      overlay: 'gantry-theme://js/vegas-background-slideshow/overlays/01.png'
+      transition: 'fade'
+      animation: 'kenburns'
+      delay: 5000
+      transitionDuration: 'auto'
+      animationDuration: 'auto'
+      images:
+        -
+          title: 'Imagem 1'
+          image: 'gantry-media://slider-particle/image1.jpg'
+        -
+          title: 'Imagem 2'
+          image: 'gantry-media://slider-particle/image2.jpg'
+        -
+          title: 'Imagem 3'
+          image: 'gantry-media://slider-particle/image3.jpg'
   branding:
     block:
       class: wa-branding

@@ -2,6 +2,48 @@
 
 {% block particle %}
 	<div class="slider-content">
-
+		<div class="headlines">
+			{% if particle.title1 %}<h2 class="title1">{{ particle.title1|raw }}</h2>{% endif %}
+			{% if particle.title2 %}<h1 class="title2">{{ particle.title2|raw }}</h1>{% endif %}
+			<svg>
+				<line x1="0" y1="0" x2="150" y2="0" class="draw" /></line>
+			</svg>
+			{% if particle.title3 %}<p class="title3">{{ particle.title3|raw }}</p>{% endif %}
+		</div>
+		{% if particle.imageOverlay %}
+		<div class="image-opacity">
+			<img src="{{ url(particle.imageOverlay) }}" alt="Imagem de Fundo">
+		</div>
+		{% endif %}
 	</div>
+
+	{% assets in 'head' with { priority: 0 } %}
+	<link rel="stylesheet" href="{{ url('gantry-theme://js/vegas-background-slideshow/vegas.min.css') }}" type="text/css"/>
+	{% endassets -%}
+
+	{% scripts in 'footer' with { priority: 10 } %}
+	<script type="text/javascript" src="http://zeptojs.com/zepto.min.js"></script>
+	<script type="text/javascript" src="{{ url('gantry-theme://js/vegas-background-slideshow/vegas.min.js') }}"></script>
+	<script type="text/javascript">
+		$("#g-slider").vegas({
+			slides: [
+				{% for item in particle.images %}
+				{ src: "{{ url(item.image) }}" },
+				{% endfor %}
+			],
+			overlay: '{{ url(particle.overlay) }}',
+			transition: '{{ particle.transition }}',
+			animation: '{{ particle.animation }}',
+			{% if particle.delay %}
+			delay: {{ particle.delay }},
+			{% endif %}
+			{% if particle.transitionDuration %}
+			transitionDuration: '{{ particle.transitionDuration }}',
+			{% endif %}
+			{% if particle.animationDuration %}
+			animationDuration: '{{ particle.animationDuration }}'
+			{% endif %}
+		});
+	</script>
+	{% endscripts -%}
 {% endblock %}
