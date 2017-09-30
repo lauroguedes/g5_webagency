@@ -6,14 +6,14 @@ preset:
 layout:
   /top/:
     -
-      - 'logo-4941 30'
-      - 'menu-7382 70'
+      - 'logo-5846 30'
+      - 'menu-4167 70'
   /social/:
     -
-      - social-8636
+      - social-1836
   /slider/:
     -
-      - slider-5783
+      - slider-4260
   /service/:
     -
       - position-service
@@ -36,12 +36,12 @@ layout:
         - 'position-form 50'
   /footer/:
     -
-      - 'branding-6474 33.3'
-      - 'totop-6520 33.3'
-      - 'copyright-5659 33.3'
+      - 'branding-9985 33.3'
+      - 'totop-6026 33.3'
+      - 'copyright-2097 33.3'
   offcanvas:
     -
-      - mobile-menu-3590
+      - mobile-menu-1056
 structure:
   top:
     type: section
@@ -96,13 +96,13 @@ structure:
     attributes:
       boxed: ''
 content:
-  logo-4941:
+  logo-5846:
     block:
       class: wa-logo
-  menu-7382:
+  menu-4167:
     block:
       class: wa-menu
-  social-8636:
+  social-1836:
     attributes:
       display: icons_only
       items:
@@ -131,16 +131,16 @@ content:
         - 'wa-social hidden-phone'
       variations:
         - 'nopaddingall nomarginall'
-  slider-5783:
+  slider-4260:
     attributes:
-      title1: '2 Descubra a Verdadeira Essência do Seu Projeto'
-      title2: '50 Criatividade, Simplicidade e Inovação'
+      title1: 'Descubra a Verdadeira Essência do Seu Projeto'
+      title2: 'Criatividade, Simplicidade e Inovação'
       title3: 'Deixe um brilho nos olhos de seus clientes ao apreciarem seu Projeto'
       imageOverlay: 'gantry-media://slider-particle/image-overlay.png'
-      overlay: 'gantry-theme://js/vegas-background-slideshow/overlays/04.png'
-      transition: zoomOut
-      animation: random
-      delay: '5000'
+      overlay: 'gantry-theme://js/vegas-background-slideshow/overlays/01.png'
+      transition: fade
+      animation: kenburns
+      delay: 5000
       transitionDuration: auto
       animationDuration: auto
       images:
@@ -174,18 +174,18 @@ content:
   position-form:
     attributes:
       key: form
-  branding-6474:
+  branding-9985:
     block:
       class: wa-branding
-  totop-6520:
+  totop-6026:
     block:
       class: wa-totop
       variations: center
-  copyright-5659:
+  copyright-2097:
     block:
       class: wa-copy
       variations: align-right
-  mobile-menu-3590:
+  mobile-menu-1056:
     title: 'Mobile Menu'
     block:
       class: wa-mobile-menu
