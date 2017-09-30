@@ -1,5 +1,6 @@
 #g-social {
 	position: absolute;
+	z-index: 10;
 	top: rem(90px);
 	right: 0;
 	.wa-social{
@@ -34,6 +35,7 @@
 }
 #g-top {
 	background: $top-background;
+	background: rgba(102,102,102, 0.8);
 	color: $top-text-color;
 	text-align: center;
 	position: relative;
