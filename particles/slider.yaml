@@ -1,7 +1,7 @@
 name: Slider
 description: Displays Slideshow of videos and images
 type: particle
-icon: fa-images
+icon: fa-picture-o
 
 configuration:
   caching:
@@ -14,3 +14,100 @@ form:
       label: Enabled
       description: Globally enable the particle.
       default: true
+
+    title1:
+      type: input.text
+      label: Título 1
+      description: Insira o primeiro texto de impacto
+
+    title2:
+      type: input.text
+      label: Título 2
+      description: Insira o segundo texto de impacto
+
+    title3:
+      type: input.text
+      label: Título 3
+      description: Insira o terceiro texto de impacto
+
+    imageOverlay:
+      type: input.imagepicker
+      label: Imagem opaca
+      description: Selecione uma imagem que irá aparecer de forma suave atraz dos títulos
+
+    overlay:
+      type: select.selectize
+      label: Sombra
+      description: Escolha o tipo de sombra
+      placeholder: 'Selecione...'
+      default: 'gantry-theme://js/vegas-background-slideshow/overlays/01.png'
+      options:
+          'gantry-theme://js/vegas-background-slideshow/overlays/01.png': Sombra 1
+          'gantry-theme://js/vegas-background-slideshow/overlays/02.png': Sombra 2
+          'gantry-theme://js/vegas-background-slideshow/overlays/03.png': Sombra 3
+          'gantry-theme://js/vegas-background-slideshow/overlays/04.png': Sombra 4
+          'gantry-theme://js/vegas-background-slideshow/overlays/05.png': Sombra 5
+          'gantry-theme://js/vegas-background-slideshow/overlays/06.png': Sombra 6
+          'gantry-theme://js/vegas-background-slideshow/overlays/07.png': Sombra 7
+          'gantry-theme://js/vegas-background-slideshow/overlays/08.png': Sombra 8
+          'gantry-theme://js/vegas-background-slideshow/overlays/09.png': Sombra 9
+          'gantry-theme://js/vegas-background-slideshow/overlays/10.png': Sombra 10
+
+    transition:
+      type: select.selectize
+      label: Transição
+      description: Escolha o tipo de transição
+      placeholder: 'Selecione...'
+      default: 'fade'
+      options:
+        'fade': Fade
+        'zoomOut': ZoomOut
+        'swirlLeft': SwirlLeft
+        'blur': Blur
+        'random': Random
+
+    animation:
+      type: select.selectize
+      label: Animação
+      description: Escolha o tipo de animação
+      placeholder: 'Selecione...'
+      default: 'kenburns'
+      options:
+        'kenburns': Kenburns
+        'kenburnsUpRight': Kenburns Up Right
+        'kenburnsDownLeft': Kenburns Down Left
+        'random': Random
+
+    delay:
+      type: input.number
+      label: Duração entre slides
+      description: Coloque a duração entre slides em milisegundos
+      default: 5000
+
+    transitionDuration:
+      type: input.text
+      label: Duração entre transições
+      description: Coloque a duração entre transições em milisegundos
+      default: 'auto'
+
+    animationDuration:
+      type: input.text
+      label: Duração entre animações
+      description: Coloque a duração entre animações em milisegundos
+      default: 'auto'
+
+    images:
+      type: collection.list
+      array: true
+      label: Imagens
+      description: Insira as imagens que ficarão passando
+      value: title
+      ajax: true
+
+      fields:
+        .title:
+          type: input.text
+          label: Título
+        .image:
+          type: input.imagepicker
+          label: Imagem

@@ -1,5 +1,83 @@
 #g-slider {
-
+	position: relative;
+	margin-top: rem(-90px);
+	.g-content{
+		margin: rem(150px) $content-margin;
+		margin-top: rem(150px) + rem(90px);
+		/*responsive styles*/
+		@include breakpoint(tablet-range){
+			margin: rem(100px) $content-margin;
+			margin-top: rem(100px) + rem(90px);
+		}
+		@include breakpoint(mobile-only){
+			margin: rem(50px) $content-margin;
+			margin-top: rem(50px) + rem(90px);
+		}
+		@include breakpoint(small-mobile-range){
+			margin: rem(30px) $content-margin;
+			margin-top: rem(30px) + rem(90px);
+		}
+	}
+	.vegas-timer-progress{
+		background: $accent-color-1;
+	}
+	.slider-content{
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		position: relative;
+		text-align: center;
+		.headlines{
+			color: $white;
+			position: relative;
+			z-index: 2;
+			h1,h2{
+				font-family: get-font-family($base-heading-font);
+				font-weight: $font-weight-light;
+				text-transform: uppercase;
+				color: $white;
+			}
+			h1{
+				font-size: rem(48px);
+				margin-top: 0;
+				margin-bottom: rem(5px);
+				/*responsive styles*/
+				@include breakpoint(mobile-only){
+					font-size: rem(48px) - rem(15px);
+				}
+				@include breakpoint(small-mobile-range){
+					font-size: rem(48px) - rem(20px);
+				}
+			}
+			h2,p{
+				font-size: rem(24px);
+				/*responsive style*/
+				@include breakpoint(mobile-only){
+					font-size: rem(24px) - rem(8px);
+				}
+			}
+			p{
+				margin-top: rem(5px);
+			}
+			h2{
+				margin-bottom: 0;
+			}
+			svg{
+				width: rem(150px);
+				height: rem(10px);
+				.draw{
+					stroke: $accent-color-2;
+					stroke-width: rem(10px);
+				}
+			}
+		}
+		.image-opacity{
+			position: absolute;
+			top: rem(-100px);
+			z-index: 1;
+			opacity: 0.2;
+		}
+	}
 }
 
 @media print {
