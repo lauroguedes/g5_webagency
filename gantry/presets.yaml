@@ -26,9 +26,9 @@ preset1:
       background: '#ffffff'
       text-color: '#666666'
     web-project:
-      background: '#666666'
+      background: '#ffffff'
       image: "gantry-media://backgrounds/background-web-project.png"
-      text-color: '#ffffff'
+      text-color: '#666666'
     portfolio:
       background: '#ffffff'
       text-color: '#666666'
@@ -77,9 +77,9 @@ preset2:
       background: '#ffffff'
       text-color: '#616b72'
     web-project:
-      background: '#616b72'
+      background: '#ffffff'
       image: "gantry-media://backgrounds/background-web-project.png"
-      text-color: '#ffffff'
+      text-color: '#616b72'
     portfolio:
       background: '#ffffff'
       text-color: '#616b72'

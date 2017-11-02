@@ -47,9 +47,7 @@
         <position>info</position>
         <position>number</position>
         <position>portfolio</position>
-        <position>service</position>
         <position>team</position>
-        <position>webproject</position>
     </positions>
 
     <config>

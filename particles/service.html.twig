@@ -1,0 +1,27 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div class="service-content">
+		<div class="g-grid">
+			<div class="g-block">
+				<div class="g-content">
+					{% if particle.headline %}<h2><span>{{ particle.headline|raw }}</span></h2>{% endif %}
+					{% if particle.description %}<div class="service-description">{{ particle.description|raw }}</div>{% endif %}
+				</div>
+			</div>
+		</div>
+		<div class="g-grid">
+			{% for service in particle.services %}
+				<div {% if service.id %}id="{{ service.id|e }}"{% endif %}
+					 class="g-block size-33 {{ service.class }} {{ service.variations }}">
+					<div class="g-content">
+						<i class="{{ service.icon }} service-icons"></i>
+						{% if service.title %}<h3>{{ service.title|raw }}</h3>{% endif %}
+						{% if service.subtitle %}<h4>{{ service.subtitle|raw }}</h4>{% endif %}
+						{% if service.description %}<p>{{ service.description|raw }}</p>{% endif %}
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}
