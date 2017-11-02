@@ -2,6 +2,92 @@
 
 {% block particle %}
     <div class="webproject-content">
-
+        <div class="g-grid particle-title">
+            <div class="g-block">
+                <div class="g-content">
+                    {% if particle.headline %}<h2><span>{{ particle.headline|raw }}</span></h2>{% endif %}
+                    {% if particle.description %}<div class="description">{{ particle.description|raw }}</div>{% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="g-grid particle-content">
+            <div class="g-block size-20 content-left">
+                <div class="g-content">
+                    {% for key, item in particle.leftFeatures %}
+                        <div class="feature {% if(key == 1) %} align-left {% else %} align-right {% endif %} ">
+                            <div class="feature-icon tooltip-left" data-tooltip-content="#feature-left-{{ key }}">
+                                <i class="{{ item.icon }}"></i>
+                            </div>
+                            <div class="feature-content">
+                                <div id="feature-left-{{ key }}">
+                                    <h4>{{ item.title }}</h4>
+                                    <p>{{ item.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="g-block size-60 content-center">
+                <div class="g-content">
+                    <img src="{{ url(particle.layout) }}" alt="">
+                </div>
+            </div>
+            <div class="g-block size-20 content-right">
+                <div class="g-content">
+                    {% for key, item in particle.rightFeatures %}
+                        <div class="feature {% if(key == 1) %} align-right {% endif %}">
+                            <div class="feature-icon tooltip-right" data-tooltip-content="#feature-right-{{ key }}">
+                                <i class="{{ item.icon }}"></i>
+                            </div>
+                            <div class="feature-content">
+                                <div id="feature-right-{{ key }}">
+                                    <h4>{{ item.title }}</h4>
+                                    <p>{{ item.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
+
+    {# styles #}
+    {% assets in 'head' with { priority: 0 } %}
+    <link rel="stylesheet" href="{{ url('gantry-theme://js/tooltipster/tooltipster.bundle.min.css') }}" type="text/css"/>
+    {% endassets -%}
+
+    <script type="text/javascript" src="{{ url('gantry-theme://js/tooltipster/tooltipster.bundle.min.js') }}"></script>
+    <script type="text/javascript">
+        (function ($) {
+
+            var mediaquery = window.matchMedia("(max-width: 47.938rem)");
+            if (mediaquery.matches) {
+                $('.feature > .feature-icon').removeClass('tooltip-left');
+                $('.feature > .feature-icon').removeClass('tooltip-right');
+                $('.feature > .feature-icon').addClass('tooltip-responsive');
+            }
+            $('.tooltip-responsive').tooltipster({
+                side: 'top',
+                theme: ['tooltipster-punk', 'tooltipster-customized'],
+                trigger: 'custom',
+                triggerOpen: {
+                    tap: true
+                },
+                triggerClose: {
+                    tap: true
+                }
+            });
+            $('.tooltip-left').tooltipster({
+                side: 'right',
+                theme: ['tooltipster-punk', 'tooltipster-customized']
+            });
+            $('.tooltip-right').tooltipster({
+                side: 'left',
+                theme: ['tooltipster-punk', 'tooltipster-customized']
+            });
+        })(jQuery)
+    </script>
+
 {% endblock %}

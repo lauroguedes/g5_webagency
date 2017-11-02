@@ -14,3 +14,58 @@ form:
       label: Enabled
       description: Globally enable the particle.
       default: true
+
+    headline:
+      type: input.text
+      label: Headline
+      description: Customize the headline text.
+      placeholder: Enter headline
+
+    description:
+      type: textarea.textarea
+      label: Description
+      description: Customize the description.
+      placeholder: Enter short description
+
+    layout:
+      type: input.imagepicker
+      label: Layout
+      description: Insira o layout que ficará na frente
+
+    rightFeatures:
+      type: collection.list
+      array: true
+      label: Características da Direita
+      description: Insira as características da direita
+      value: title
+      ajax: true
+
+      fields:
+        .icon:
+          type: input.icon
+          label: Ícone
+        .title:
+          type: input.text
+          label: Título
+        .description:
+          type: textarea.textarea
+          label: Descrição
+
+    leftFeatures:
+      type: collection.list
+      array: true
+      label: Características da Esquerda
+      description: Insira as características da direita
+      value: title
+      ajax: true
+
+      fields:
+        .icon:
+          type: input.icon
+          label: Ícone
+        .title:
+          type: input.text
+          label: Título
+        .description:
+          type: textarea.textarea
+          label: Descrição

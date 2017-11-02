@@ -2,24 +2,24 @@ version: 2
 preset:
   image: 'gantry-admin://images/layouts/home.png'
   name: home
-  timestamp: 1506208974
+  timestamp: 1507762475
 layout:
   /top/:
     -
-      - 'logo-5846 30'
-      - 'menu-4167 70'
+      - 'logo-2076 30'
+      - 'menu-7386 70'
   /social/:
     -
-      - social-1836
+      - social-5703
   /slider/:
     -
-      - slider-4260
+      - slider-2904
   /service/:
     -
-      - position-service
+      - service-5249
   /web-project/:
     -
-      - position-webproject
+      - webproject-5636
   /portfolio/:
     -
       - position-portfolio
@@ -36,12 +36,12 @@ layout:
         - 'position-form 50'
   /footer/:
     -
-      - 'branding-9985 33.3'
-      - 'totop-6026 33.3'
-      - 'copyright-2097 33.3'
+      - 'branding-1577 33.3'
+      - 'totop-5988 33.3'
+      - 'copyright-8518 33.3'
   offcanvas:
     -
-      - mobile-menu-1056
+      - mobile-menu-9282
 structure:
   top:
     type: section
@@ -96,13 +96,13 @@ structure:
     attributes:
       boxed: ''
 content:
-  logo-5846:
+  logo-2076:
     block:
       class: wa-logo
-  menu-4167:
+  menu-7386:
     block:
       class: wa-menu
-  social-1836:
+  social-5703:
     attributes:
       display: icons_only
       items:
@@ -131,7 +131,7 @@ content:
         - 'wa-social hidden-phone'
       variations:
         - 'nopaddingall nomarginall'
-  slider-4260:
+  slider-2904:
     attributes:
       title1: 'Descubra a Verdadeira Essência do Seu Projeto'
       title2: 'Criatividade, Simplicidade e Inovação'
@@ -153,12 +153,69 @@ content:
         -
           title: 'Imagem 3'
           image: 'gantry-media://slider-particle/image3.jpg'
-  position-service:
+  service-5249:
     attributes:
-      key: service
-  position-webproject:
+      headline: 'Nossos Serviços'
+      services:
+        -
+          icon: 'fa fa-laptop'
+          title: 'Web Sites'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-opencart'
+          title: 'Lojas Virtuais'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-sitemap'
+          title: 'Hot Sites'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-connectdevelop'
+          title: 'Sistemas Web'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-android'
+          title: Apps
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-at'
+          title: 'E-mail Marketing'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+    block:
+      variations: title1
+  webproject-5636:
     attributes:
-      key: webproject
+      headline: 'Projetos Web'
+      description: 'Confira as principais características de nossos layouts'
+      layout: 'gantry-media://webproject-particle/layout.png'
+      rightFeatures:
+        -
+          icon: 'fa fa-mobile'
+          title: Responsivo
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+        -
+          icon: 'fa fa-search-plus'
+          title: SEO
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+        -
+          icon: 'fa fa-trophy'
+          title: Premiado
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+      leftFeatures:
+        -
+          icon: 'fa fa-window-maximize'
+          title: Customizável
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+        -
+          icon: 'fa fa-bolt'
+          title: Rápido
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+        -
+          icon: 'fa fa-tasks'
+          title: Gerenciável
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+    block:
+      variations: title2
   position-portfolio:
     attributes:
       key: portfolio
@@ -174,18 +231,18 @@ content:
   position-form:
     attributes:
       key: form
-  branding-9985:
+  branding-1577:
     block:
       class: wa-branding
-  totop-6026:
+  totop-5988:
     block:
       class: wa-totop
       variations: center
-  copyright-2097:
+  copyright-8518:
     block:
       class: wa-copy
       variations: align-right
-  mobile-menu-1056:
+  mobile-menu-9282:
     title: 'Mobile Menu'
     block:
       class: wa-mobile-menu

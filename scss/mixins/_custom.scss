@@ -1,3 +1,8 @@
 @mixin trans($options: all 0.3s linear){
   @include transition($options);
 }
+
+@mixin set-font($font, $weight: normal){
+  font-family: get-font-family($font);
+  font-weight: $weight;
+}

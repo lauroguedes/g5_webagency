@@ -15,10 +15,10 @@ layout:
     - slider
 
   /service/:
-    - position-service
+    - service
 
   /web-project/:
-    - position-webproject
+    - webproject
 
   /portfolio/:
     - position-portfolio
@@ -121,6 +121,69 @@ content:
         -
           title: 'Imagem 3'
           image: 'gantry-media://slider-particle/image3.jpg'
+  service:
+    attributes:
+      headline: 'Nossos Serviços'
+      services:
+        -
+          icon: 'fa fa-laptop'
+          title: 'Web Sites'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-opencart'
+          title: 'Lojas Virtuais'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-sitemap'
+          title: 'Hot Sites'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-connectdevelop'
+          title: 'Sistemas Web'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-android'
+          title: 'Apps'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+        -
+          icon: 'fa fa-at'
+          title: 'E-mail Marketing'
+          description: 'It is a long established fact that a reader will be distracted by the looking at its '
+    block:
+      variations: title1
+  webproject:
+    attributes:
+      headline: 'Projetos Web'
+      description: 'Confira as principais características de nossos layouts'
+      layout: 'gantry-media://webproject-particle/layout.png'
+      rightFeatures:
+        -
+          icon: 'fa fa-mobile'
+          title: 'Responsivo'
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+        -
+          icon: 'fa fa-search-plus'
+          title: 'SEO'
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+        -
+          icon: 'fa fa-trophy'
+          title: 'Premiado'
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+      leftFeatures:
+        -
+          icon: 'fa fa-window-maximize'
+          title: 'Customizável'
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+        -
+          icon: 'fa fa-bolt'
+          title: 'Rápido'
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+        -
+          icon: 'fa fa-tasks'
+          title: 'Gerenciável'
+          description: 'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.'
+    block:
+      variations: title2
   branding:
     block:
       class: wa-branding

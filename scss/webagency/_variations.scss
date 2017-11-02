@@ -19,10 +19,41 @@
 }
 
 .title1{
-
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    font-size: rem(36px);
+    margin-bottom: rem(40px);
+    /*responsive style*/
+    @include breakpoint(small-mobile-range){
+      font-size: rem(36px) - rem(8px);
+    }
+    @include display(flex);
+    @include justify-content(center);
+    &:after{
+      content: "";
+      border-color: $accent-color-1;
+      border-width: rem(5px) 0 0 0;
+      width: rem(70px);
+      border-style: solid;
+      position: absolute;
+      bottom: rem(-20px);
+    }
+    &+ .description{
+      text-align: center;
+      margin-bottom: rem(30px);
+      font-size: rem(24px);
+    }
+  }
 }
 .title2{
-
+  @extend .title1;
+  h2{
+    &:after{
+      border-color: $accent-color-2;
+    }
+  }
 }
 .title3{
 

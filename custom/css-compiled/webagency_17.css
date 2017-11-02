@@ -763,24 +763,297 @@ hr {
   padding: 1.5rem 0;
   background: #fff;
   color: #666;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* line 6, templates/g5_webagency/scss/webagency/_service.scss */
+/* line 7, templates/g5_webagency/scss/webagency/_service.scss */
+/* line 8, templates/g5_webagency/scss/webagency/_service.scss */
+#g-service .service-content .g-grid:nth-child(2) .g-content {
+  text-align: center;
+}
+/* line 10, templates/g5_webagency/scss/webagency/_service.scss */
+#g-service .service-content .g-grid:nth-child(2) .g-content .service-icons {
+  font-size: 5.625rem;
+  color: #04abd2;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+/* line 16, templates/g5_webagency/scss/webagency/_service.scss */
+#g-service .service-content .g-grid:nth-child(2) h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #666;
+}
+/* line 22, templates/g5_webagency/scss/webagency/_service.scss */
+#g-service .service-content .g-grid:nth-child(2) p {
+  font-size: 1.125rem;
+  color: #999;
+  font-family: "oswald", sans-serif;
+  font-weight: 300;
 }
 @media print {
-  /* line 10, templates/g5_webagency/scss/webagency/_service.scss */
+  /* line 34, templates/g5_webagency/scss/webagency/_service.scss */
   #g-service {
     background: #fff !important;
     color: #000 !important;
   }
 }
 /* line 1, templates/g5_webagency/scss/webagency/_webproject.scss */
-#g-webproject {
-  padding: 1.5rem 0;
-  background: #666;
+#g-web-project {
+  padding: 1.5rem 0 5rem 0;
+  background: #fff;
+  background-image: url('../../images/backgrounds/background-web-project.png');
+  color: #666;
+}
+/* line 7, templates/g5_webagency/scss/webagency/_webproject.scss */
+#g-web-project .webproject-content {
+  /*responsive-style*/
+}
+/* line 8, templates/g5_webagency/scss/webagency/_webproject.scss */
+#g-web-project .webproject-content .content-left, #g-web-project .webproject-content .content-right {
+  /*responsive style*/
+}
+/* line 10, templates/g5_webagency/scss/webagency/_webproject.scss */
+#g-web-project .webproject-content .content-left .g-content, #g-web-project .webproject-content .content-right .g-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: space-between;
+  -moz-align-content: space-between;
+  align-content: space-between;
+  -ms-flex-line-pack: justify;
+  margin: 0 0.625rem;
+  padding: 0 0.938rem;
+  height: 100%;
+}
+/* line 17, templates/g5_webagency/scss/webagency/_webproject.scss */
+#g-web-project .webproject-content .content-left .g-content .feature, #g-web-project .webproject-content .content-right .g-content .feature {
+  position: relative;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 0 100%;
+  -moz-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+/* line 21, templates/g5_webagency/scss/webagency/_webproject.scss */
+#g-web-project .webproject-content .content-left .g-content .feature .feature-icon, #g-web-project .webproject-content .content-right .g-content .feature .feature-icon {
+  display: inline-block;
+  background: #ff7f00;
+  height: 4.375rem;
+  width: 4.375rem;
+  line-height: 4.375rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2rem;
   color: #fff;
 }
+/* line 32, templates/g5_webagency/scss/webagency/_webproject.scss */
+#g-web-project .webproject-content .content-left .g-content .feature .feature-content, #g-web-project .webproject-content .content-right .g-content .feature .feature-content {
+  display: none;
+}
+@media only all and (max-width: 47.938rem) {
+  /* line 40, templates/g5_webagency/scss/webagency/_webproject.scss */
+  #g-web-project .webproject-content .content-left .g-content, #g-web-project .webproject-content .content-right .g-content {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 43, templates/g5_webagency/scss/webagency/_webproject.scss */
+  #g-web-project .webproject-content .content-left .g-content .feature, #g-web-project .webproject-content .content-right .g-content .feature {
+    text-align: center !important;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  /* line 46, templates/g5_webagency/scss/webagency/_webproject.scss */
+  #g-web-project .webproject-content .content-left .g-content .feature .feature-icon, #g-web-project .webproject-content .content-right .g-content .feature .feature-icon {
+    height: 3.125rem;
+    width: 3.125rem;
+    line-height: 3.125rem;
+    font-size: 1.5rem;
+  }
+}
+/* line 55, templates/g5_webagency/scss/webagency/_webproject.scss */
+#g-web-project .webproject-content .content-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  /*responsive style*/
+}
+/* line 59, templates/g5_webagency/scss/webagency/_webproject.scss */
+#g-web-project .webproject-content .content-center .g-content {
+  text-align: center;
+}
+@media only all and (max-width: 47.938rem) {
+  /* line 64, templates/g5_webagency/scss/webagency/_webproject.scss */
+  #g-web-project .webproject-content .content-center .g-content {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only all and (max-width: 47.938rem) {
+  /* line 73, templates/g5_webagency/scss/webagency/_webproject.scss */
+  #g-web-project .webproject-content .content-left {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+    order: 1;
+    -ms-flex-order: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  /* line 77, templates/g5_webagency/scss/webagency/_webproject.scss */
+  #g-web-project .webproject-content .content-right {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+    -webkit-order: 2;
+    -moz-order: 2;
+    order: 2;
+    -ms-flex-order: 2;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  /* line 81, templates/g5_webagency/scss/webagency/_webproject.scss */
+  #g-web-project .webproject-content .content-center {
+    margin-bottom: -2.1875rem;
+  }
+}
+/*Estilo dos tolltips*/
+/* line 89, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 90, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 91, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk .tooltipster-arrow-background {
+  display: none;
+}
+/* line 94, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 95, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-bottom .tooltipster-arrow-border {
+  border-bottom-color: #04abd2;
+}
+/* line 99, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 100, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-left .tooltipster-arrow-border {
+  border-left-color: #04abd2;
+}
+/* line 104, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 105, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-right .tooltipster-arrow-border {
+  border-right-color: #04abd2;
+}
+/* line 109, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 110, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-top .tooltipster-arrow-border {
+  border-top-color: #04abd2;
+}
+/* line 114, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 115, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-customized .tooltipster-box {
+  background: #fff;
+  border: none;
+  padding: 0.5rem;
+  width: 15.625rem;
+}
+/* line 120, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-customized .tooltipster-box h4 {
+  color: #04abd2;
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+  position: relative;
+}
+/* line 125, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-customized .tooltipster-box h4:after {
+  content: "";
+  border-color: #04abd2;
+  border-width: 0.125rem 0 0 0;
+  width: 3.125rem;
+  margin-left: 0.5rem;
+  border-style: solid;
+  position: absolute;
+  top: 0.3125rem;
+}
+/* line 136, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-customized .tooltipster-box p {
+  font-family: "oswald", sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #999;
+  margin: 0;
+}
+/* line 143, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 144, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-customized.tooltipster-right .tooltipster-box {
+  border-left: 3px solid #04abd2;
+}
+/* line 148, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 149, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-customized.tooltipster-left .tooltipster-box {
+  border-right: 3px solid #04abd2;
+}
+/* line 153, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 154, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-customized.tooltipster-top .tooltipster-box {
+  border-bottom: 3px solid #04abd2;
+}
+/* line 158, templates/g5_webagency/scss/webagency/_webproject.scss */
+/* line 159, templates/g5_webagency/scss/webagency/_webproject.scss */
+.tooltipster-sidetip.tooltipster-punk.tooltipster-customized.tooltipster-bottom .tooltipster-box {
+  border-top: 3px solid #04abd2;
+}
 @media print {
-  /* line 8, templates/g5_webagency/scss/webagency/_webproject.scss */
+  /* line 168, templates/g5_webagency/scss/webagency/_webproject.scss */
   #g-webproject {
     background: #fff !important;
     color: #000 !important;
@@ -848,28 +1121,81 @@ hr {
   padding: 0.938rem;
   margin: 0.625rem;
 }
+/* line 21, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 22, templates/g5_webagency/scss/webagency/_variations.scss */
+.title1 h2, .title2 h2 {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+  /*responsive style*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+@media only all and (max-width: 30rem) {
+  .title1 h2, .title2 h2 {
+    font-size: 1.75rem;
+  }
+}
 /* line 34, templates/g5_webagency/scss/webagency/_variations.scss */
-/* line 35, templates/g5_webagency/scss/webagency/_variations.scss */
+.title1 h2:after, .title2 h2:after {
+  content: "";
+  border-color: #ff7f00;
+  border-width: 0.3125rem 0 0 0;
+  width: 4.375rem;
+  border-style: solid;
+  position: absolute;
+  bottom: -1.25rem;
+}
+/* line 43, templates/g5_webagency/scss/webagency/_variations.scss */
+.title1 h2 + .description, .title2 h2 + .description {
+  text-align: center;
+  margin-bottom: 1.875rem;
+  font-size: 1.5rem;
+}
+/* line 50, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 52, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 53, templates/g5_webagency/scss/webagency/_variations.scss */
+.title2 h2:after {
+  border-color: #04abd2;
+}
+/* line 65, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 66, templates/g5_webagency/scss/webagency/_variations.scss */
 .shadow.moduletable, .shadow.widget, .shadow.g-outer-box, .shadow > .g-content {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 40, templates/g5_webagency/scss/webagency/_variations.scss */
-/* line 41, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 71, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 72, templates/g5_webagency/scss/webagency/_variations.scss */
 .shadow2.moduletable, .shadow2.widget, .shadow2.g-outer-box, .shadow2 > .g-content {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
-/* line 46, templates/g5_webagency/scss/webagency/_variations.scss */
-/* line 47, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 77, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 78, templates/g5_webagency/scss/webagency/_variations.scss */
 .disabled.moduletable, .disabled.widget, .disabled.g-outer-box, .disabled > .g-content {
   opacity: 0.4;
 }
-/* line 52, templates/g5_webagency/scss/webagency/_variations.scss */
-/* line 53, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 83, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 84, templates/g5_webagency/scss/webagency/_variations.scss */
 .square.moduletable, .square.widget, .square.g-outer-box, .square > .g-content {
   border-radius: none;
 }
-/* line 58, templates/g5_webagency/scss/webagency/_variations.scss */
-/* line 59, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 89, templates/g5_webagency/scss/webagency/_variations.scss */
+/* line 90, templates/g5_webagency/scss/webagency/_variations.scss */
 .rounded.moduletable, .rounded.widget, .rounded.g-outer-box, .rounded > .g-content {
   border-radius: 0.1875rem;
 }
